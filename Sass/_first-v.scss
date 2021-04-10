@@ -1,0 +1,57 @@
+#first-v {
+  height: 100vh;
+}
+
+.first-v__wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.first-v__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  height: 100%;
+
+  @include sp {
+    // 画像と重ねる
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 40%;
+    color: #fff;
+    // 並び替え
+    flex-direction: column-reverse;
+  }
+}
+
+.first-v__image {
+    width: 55%;
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png);
+    // background-size: cover;
+    position: relative;
+
+    @include sp {
+      // タイトルと重ねる
+      width: 100%;
+      height: 100vh;
+    }
+}
+
+h2 {
+  line-height: 62px;
+}
+
+.catch-ja {
+  font-family: "ヒラギノ明朝 Pro";
+  font-size: 38px;
+  margin-bottom: 48px;
+}
+
+.catch-en {
+  font-family: "Zapfino";
+  font-size: 38px;
+}

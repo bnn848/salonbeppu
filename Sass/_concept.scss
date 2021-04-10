@@ -1,0 +1,79 @@
+#concept {
+  
+  .inner {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+#concept .image {
+  display: flex;
+  width: 767px;
+  margin-left: 100px;
+  
+  
+  img {
+    height: 431px;
+    z-index: 1;
+
+    @include sp {
+      height: 205px;
+      object-fit: cover;
+    }
+    
+    &:first-of-type {
+      margin-right: 7px;
+    }
+  }
+}
+
+.concept-top {
+  height: 400px;
+  background-color: #A193861F;
+}
+
+.concept-bottom {
+  height: 560px;
+  padding: 64px 50px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: center;
+  color: #fff;
+  background-color: #A1938689;
+
+  @include sp {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .catch-ja,
+  .text {
+    width: 442px;
+    height: 130px;
+    margin: 0 30px;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 42px;
+
+    @include sp {
+      font-size: 29px;
+    }
+  }
+  
+  p {
+    text-overflow: wrap;
+    font-family: "ヒラギノ角ゴ Pro";
+
+    @include sp {
+      height: 211px;
+      text-align: left;
+    }
+  }
+}
